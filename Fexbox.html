@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style_Flexbox.css" rel="stylesheet"> 
+	<style type="text/css">
+		*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header, nav, main, footer{
+	margin:0 auto;
+    width: 100%;
+}
+
+header{
+    background-color: #00206C;
+     color: #FFFFFF;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+nav{
+    padding: 25px;
+    background-color: #EBD50C;
+    color: #453232;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width: 200px;
+    list-style-type: none;
+    text-align: center;	
+    
+}
+main{
+    display: flex;
+    background-color: #089EB7;
+    flex-direction: column;
+    align-items: center;
+}
+main section{
+    width: 80%;
+    margin: 30px;
+	background-color: #F1EA82;
+    padding: 30px;
+	text-align: center;
+}
+footer{
+    display:flex;
+    height: 80px;
+    background-color: #07206F;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+footer > h5{
+    font-size: 18px;
+	color: #fff;
+}
+.contenedor >header, .contenedor> nav, .contenedor> main, .contenedor> footer  {
+    justify-content: center;
+    
+}
+
+
+.contedenor-flexible{
+    background-color: #ED756E;
+    display: flex;
+}
+
+.contedenor-flexible > div, .contedenor-flexible-1 > div, .contedenor-flexible-2 > div, .contedenor-flexible-3 > div, .contedenor-flexible-4 > div, .contedenor-flexible-5 > div, .contedenor-flexible-6 >div, .contedenor-flexible-7 > div{
+    width: 400px;
+    height: 50px;
+    background-color: #FFC2AD;
+    margin: 10px;
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+    
+}
+.contedenor-flexible-1 > div{
+    width: 30%;
+}
+.contedenor-flexible-3 > div{
+    width: 20%;
+}
+.contedenor-flexible-4 > div{
+    height: auto;
+}
+.contedenor-flexible-5 >div{
+    width:10%;
+    height: auto;
+}
+.contedenor-flexible-6>div{
+    width: 100px;
+}
+.contedenor-flexible-7 > div{
+    width: 200px;
+    height: 200px;
+}
+.contedenor-flexible-1{
+    background-color: #C9291E;
+    display: flex;
+    flex-direction:column-reverse;
+}
+.contedenor-flexible-2{
+    background-color: #F41F0D;
+    display: flex;
+    flex-wrap:wrap;
+}
+.contedenor-flexible-3{
+    background-color:#CB6F1B;
+    display: flex;
+    justify-content:space-between;
+}
+.contedenor-flexible-4{
+    background-color: #FF7B07;
+    display: flex;
+    height: 400px;
+    align-items:stretch;
+}
+.contedenor-flexible-5{
+    background-color: #AF2B00;
+    display: flex;
+    height: auto;
+    align-items: baseline;
+}
+.contedenor-flexible-6{
+    background-color: #ED145E;
+    display: flex;
+    height: 800px;
+    flex-wrap: wrap;
+    align-content:space-around;
+}
+.contedenor-flexible-7{
+    background-color:#933B10;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+style {
+    display: none;
+}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Flexbox</h1>
+	</header>
+	<nav>
+  	<ul>
+			<li><a href="tablas 2.html">Tabla</a></li>
+			<li><a href="enlaces.html">Enlaces</a></li>
+			<li><a href="Listas.html">Listas</a></li>
+			<li><a href="Imagenes.html">Imagenes</a></li>
+			<li><a href="Audio.html">Audio</a></li>
+			<li><a href="videos.html">Video</a></li>
+			<li><a href="formulario.html">Formulario </a></li>
+			<li><a href="Contraseña.html">Musica Encuesta</a></li>
+			<li><a href="Fexbox.html">Flexbox</a></li>
+		    <li><a href="Día de muertos.html">Día de Muertos</a></li>
+			<li><a href="animacion.html">Animación</a></li>
+		</ul>
+      </nav>
+	<main>
+        <section>
+          <h2>Contenedores flexibles basicos</h2>
+          <div class="contedenor-flexible">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </section>
+        <section>
+          <h2>Propiedaad flex-direction se usa para modificar la direccion de apilamienti de las cajas: column, row, column-revese, row-revers </h2>
+          <div class="contedenor-flexible-1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+          </div>
+        </section>
+        <section>
+          <h2>Propiedad flex-wrap se usa para especificar si deh ajustarse los elementos flexibles o no: wrap, no-wrap y wrap-reverse</h2>
+          <div class="contedenor-flexible-2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+          </div>
+        </section>
+        <section>
+          <h2>Propiedad justify-content se usa para alinear los elemento flexibles horizontalmemte: flex-end, flex-start, center, space-around, space-between</h2>
+          <div class="contedenor-flexible-3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </section>
+        <section>
+          <h2>Propiedad aling-items alinea los elementos flexibles verticalmente:  flex-end, flex-start, center, space-around, space-between</h2>
+          <div class="contedenor-flexible-4">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <h3>Baseline</h3>
+          <div class="contedenor-flexible-5">
+            <div>
+              <h1>1</h1>
+            </div>
+            <div>
+              <h6>2</h6>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div><small>4</small></div>
+            <div><big>5</big></div>
+          </div>
+        </section>
+        <section>
+          <h2>Propiedad alig -content  permite distribuir el espacio verticalmente:  flex-end, flex-start, center, space-around, space-between</h2>
+          <div class="contedenor-flexible-6">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+          </div>
+        </section>
+        <section>
+          <h2>Centrado perfecto</h2>
+          <div class="contedenor-flexible-7">
+            <div>2021&nbsp;</div>
+          </div>
+        </section>
+      </main>
+	
+	<footer>
+        <h5>Elaborado por: Andrea Rosales Hernández</h5>
+      </footer>
+	<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style>
+
+</body>
+</html>

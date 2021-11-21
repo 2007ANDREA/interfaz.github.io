@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tipos de formularios</title>
+<link href="../css/style_formularios.css" rel="stylesheet">
+	<style type="text/css">
+		header {
+    background-color: #AF9600;
+    Color: #FFF9F9;
+    font-size: 30px;
+    height: 74px;
+    text-indent: 92px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+header, nav, main, footer {
+    margin: auto;
+    width: 1025px;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    height: 187px;
+    max-height: none;
+    text-align: left;
+}
+footer {
+    height: 70px;
+    background-color: #D9C605;
+    margin-top: auto;
+    line-height: normal;
+    text-align: center;
+}
+footer h5 {
+    color: #FFF8F8;
+    font-size: 17px;
+    text-align: center;
+	padding: 26px;
+}
+
+
+body main section {
+    background-color: #F0E696;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: thick dotted #DCB2A8;
+    text-align: left;
+}
+a:hover {
+    color: #F6DC33;
+    font-weight: bolder;
+    font-size: large;
+}
+a:link {
+    color: #0E3B96;
+    font-weight: bolder;
+    text-align: center;
+}
+a:visited {
+	color: #ED756E;
+	font-weight: bolder;
+}
+main {
+    height: auto;
+    background-color: #FCDF64;
+    padding: 50px;
+}
+nav{
+    height: auto;
+    background-color: #88B6BC;
+}
+	*{
+		padding: 0;
+		margin: 0;
+		-wekit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+body nav ul{
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-left: 10px;
+	padding: 25px;
+	margin-right: 10px;
+	color: #FFFFFF;
+	font-weight: bolder;
+}
+input[type=button], input[type=submit]{
+	background-color: #AF9600;
+	color: white;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 20px 
+}
+
+	
+	</style>
+</head>
+	<header><h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Formularios</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#enlace1">Formas</a></li>
+			<li><a href="#enlace2">Radio Buttons</a></li>
+			<li><a href="#enlace3">Checkboxes</a></li>
+			<li><a href="#enlace4">Contactos</a></li>
+			<li><a href="#enlace5">Contraseña</a></li>
+	  </ul>
+	
+</nav>
+<main>
+
+<body>
+	<section>
+	<h2 id="enlace1">Formas</h2>
+	<form action="action_page.html">
+  <label for="fname">Nombre:</label><br>
+  <input type="text" id="fname" name="fname" value="Nombre o nombres"><br>
+  <label for="name">Apellido:</label><br>
+  <input type="text" id="name" name="name" value="Paterno y Materno"><br>
+  <input type="submit" value="Submit">
+</form> 
+	</section>
+	
+	<section>
+	<h2 id="enlace2">Radio Buttons</h2>
+	<p>Elige un genero:</p>
+	<form action="action_page.html">
+		<input type="radio" id="masculino" name="gender" value="masculino">
+		<label for="masculino">Masculino</label><br>
+		<input type="radio" id="femenino" name="gender" value="femenino">
+		<label for="femenino">Femenino</label><br>
+		<input type="radio" id="otro" name="gender" value="otro">
+		<label for="otro">Otro</label><br>
+		<input type="submit" value="Submit">
+		</form>
+	</section>
+	
+	<section>
+	<h2 id="enlace3">Checkboxes</h2>
+	<p>Escoge la opcion que más te convenga:</p>
+	<form action="action_page.html">
+		<input type="checkbox" id="vehicle1" name="vehicle1" value="Vicicleta">
+		<label for="vehicle1">Tengo una vicicleta</label><br>
+		<input type="checkbox" id="vehicle2" name="vehicle2" value="Carro">
+		<label for="vehicle2">Tengo un carro</label><br>
+		<input type="checkbox" id="vehicle3" name="vehicle3" value="Bike">
+		<label for="vehicle3">Tengo una bote</label><br><br>
+		<input type="submit" value="Submit">
+		</form>
+	</section>
+	
+	<section>
+	<h2 id="enlace4">Formulario de contacto</h2>
+	<form action="action_page.html">
+  <label for="textfield">Nombre:</label><br>
+  <input type="text" name="textfield" id="textfield"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" name="email" id="email"><br><br>
+  <label for="textarea">Mensaje:</label><br>
+<textarea name="textarea" id="textarea"></textarea>
+			<input type="submit" value="Enviar"> 
+</form>
+	 
+	
+	</section>
+	
+	<section>
+  <h2 id="enlace5">Formulario contraseña</h2>
+  <form action="action_page.html">
+  <label>Usuario:</label><br>
+  <input type="text"><br>
+  <label>Contraseña:</label><br>
+  <input type="password"><br>
+  <input type="submit" value="Enviar">
+  </form> 
+	</section>
+	
+	</main>
+		<footer>
+	  <h5>Elaborado por: Andrea Rosales Hernández</h5>
+</footer>
+</body>
+</html>
